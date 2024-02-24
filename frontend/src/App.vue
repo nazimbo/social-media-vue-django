@@ -4,7 +4,7 @@
     <div class="navbar-container">
       <!-- Logo -->
       <div class="nav-logo">
-        <img src="./assets/logo.svg" alt="logo" />
+        <h1>YOOO</h1>
       </div>
 
       <!-- Navigation links -->
@@ -18,11 +18,16 @@
         <a href="/notifications">
           <img src="./assets/notifications.svg" alt="notifications" />
         </a>
+        <a href="">
+          <img src="./assets/search.svg" alt="search" />
+        </a>
       </div>
 
       <!-- User profile -->
       <div class="nav-profile">
-        <img src="./assets/user.svg" alt="user" />
+        <a href="">
+          <img src="https://i.pravatar.cc/300" alt="user" />
+        </a>
       </div>
     </div>
   </nav>
@@ -46,19 +51,16 @@ nav {
   margin: 0 auto;
 }
 
-.nav-logo img {
-  width: 50px;
-}
-
 .nav-links a {
   margin: 0 1rem;
 }
 
-.nav-links img {
-  width: 50px;
+img {
+  width: 40px;
+  height: 40px;
 }
 
 .nav-profile img {
-  width: 30px;
+  border-radius: 50%;
 }
 </style>
