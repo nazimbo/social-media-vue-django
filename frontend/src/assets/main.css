@@ -1,1 +1,38 @@
+body {
+  margin: 0;
+  background-color: #fffbf5;
+  font-family: Arial, sans-serif;
+}
 
+/* Styles for signup and login views */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #f9826c;
+  margin-top: 10px;
+}

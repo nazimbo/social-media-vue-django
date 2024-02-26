@@ -4,7 +4,7 @@
     <div class="navbar-container">
       <!-- Logo -->
       <div class="nav-logo">
-        <h1>YOOO</h1>
+        <a href="/"><h1>YOOO</h1></a>
       </div>
 
       <!-- Navigation links -->
@@ -39,8 +39,17 @@
 
 <style scoped>
 nav {
-  background-color: #f8f8f8;
-  padding: 1rem 0;
+  background-color: #f7efe5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav img {
+  width: 40px;
+  height: 40px;
 }
 
 .navbar-container {
@@ -52,15 +61,15 @@ nav {
 }
 
 .nav-links a {
-  margin: 0 1rem;
-}
-
-img {
-  width: 40px;
-  height: 40px;
+  margin: 0 20px;
 }
 
 .nav-profile img {
   border-radius: 50%;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 </style>

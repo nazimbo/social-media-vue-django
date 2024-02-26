@@ -1,33 +1,43 @@
 <template>
-  <div class="max-w-7xl mx-auto grid grid-cols-2 gap-4">
+  <div class="main-container">
     <div class="main-left">
-      <div class="p-12 bg-white border border-gray-200 rounded-lg">
-        <h1 class="mb-6 text-2xl">Log in</h1>
-
-        <p class="mb-6 text-gray-500">Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate.</p>
-
-        <p class="font-bold">Don't have an account? <RouterLink :to="{ name: 'signup' }" class="underline">Click here</RouterLink> to create one!</p>
-      </div>
+      <h1>Login</h1>
+      <p>This is the login page. Lorem ipsum dolor sit mate. Lorem ipsum dolor</p>
+      <p>Don't have an account? <RouterLink :to="{ name: 'signup' }">Click here</RouterLink> to sign up!</p>
     </div>
 
     <div class="main-right">
-      <div class="p-12 bg-white border border-gray-200 rounded-lg">
-        <form class="space-y-6">
-          <div>
-            <label>E-mail</label>
-            <input type="email" placeholder="Your e-mail address" class="w-full mt-2 py-4 px-6 border border-gray-200 rounded-lg" />
-          </div>
+      <form action="">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
 
-          <div>
-            <label>Password</label>
-            <input type="password" placeholder="Your password" class="w-full mt-2 py-4 px-6 border border-gray-200 rounded-lg" />
-          </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+        </div>
 
-          <div>
-            <button class="py-4 px-6 bg-purple-600 text-white rounded-lg">Log in</button>
-          </div>
-        </form>
-      </div>
+        <button class="submit-btn" type="submit">Login</button>
+      </form>
     </div>
   </div>
 </template>
+
+<style scoped>
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+.main-left,
+.main-right {
+  padding: 30px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+</style>
