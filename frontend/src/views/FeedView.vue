@@ -1,3 +1,8 @@
+<script setup>
+import Suggestions from "@/components/Suggestions.vue";
+import Trends from "@/components/Trends.vue";
+</script>
+
 <template>
   <div class="main-container">
     <!-- Left box -->
@@ -44,31 +49,11 @@
     <!-- Right box -->
     <div class="main-right">
       <div class="trends">
-        <h2>Trends</h2>
-
-        <div class="trend">
-          <p>#trend1</p>
-          <p>1000 posts</p>
-        </div>
-
-        <div class="trend">
-          <p>#trend2</p>
-          <p>500 posts</p>
-        </div>
+        <Trends />
       </div>
 
       <div class="suggestions">
-        <h2>People you may know</h2>
-
-        <div class="suggestion">
-          <img src="https://i.pravatar.cc/150?img=3" alt="" />
-          <p><strong>Username</strong></p>
-        </div>
-
-        <div class="suggestion">
-          <img src="https://i.pravatar.cc/150?img=4" alt="" />
-          <p><strong>Username</strong></p>
-        </div>
+        <Suggestions />
       </div>
     </div>
   </div>
@@ -172,27 +157,5 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.trend {
-  display: flex;
-  justify-content: space-between;
-}
-
-.suggestions {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.suggestion {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.suggestion img {
-  border-radius: 50%;
-  width: 50px;
 }
 </style>
