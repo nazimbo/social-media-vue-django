@@ -12,13 +12,13 @@
         <a href="/">
           <img src="./assets/home.svg" alt="home" />
         </a>
-        <a href="/chat">
+        <RouterLink :to="{ name: 'messages' }">
           <img src="./assets/chat.svg" alt="chat" />
-        </a>
+        </RouterLink>
         <a href="/notifications">
           <img src="./assets/notifications.svg" alt="notifications" />
         </a>
-        <a href="">
+        <a href="/search">
           <img src="./assets/search.svg" alt="search" />
         </a>
       </div>
